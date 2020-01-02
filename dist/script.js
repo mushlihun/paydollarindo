@@ -8,47 +8,47 @@ const store = new Vuex.Store({
     products: [
     {
       id: "727026",
-      name: "Black t-shirt",
+      name: "Paydollar",
       image:
-      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=45&h=45",
+      "https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg",
       price: 34 },
 
     {
       id: "727027",
-      name: "Brown pants",
+      name: "Peso Pay",
       image:
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=45&h=45",
+      "https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg",
       price: 78 },
 
     {
       id: "727028",
-      name: "Red Sweatshirt",
+      name: "Siampay",
       image:
-      "https://images.unsplash.com/photo-1482703468513-9c19ac672ed4?auto=format&fit=crop&w=45&h=45",
+      "https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg",
       price: 109 }],
 
 
     shippingMethods: [
-    {
-      id: "gls",
-      name: "GLS",
-      desc: "GLS - Package delivered directly to the door",
-      price: "10",
-      type: "private" },
-
-    {
-      id: "fedex",
-      name: "FedEx",
-      desc: "FedEx - Package delivered directly to the door",
-      price: "10",
-      type: "private" },
-
-    {
-      id: "dhl",
-      name: "DHL",
-      desc: "DHL - Package delivered directly to your company",
-      price: "12",
-      type: "company" }],
+      {
+        id: "gls",
+        name: "Gosend",
+        desc: "Gosend - Package delivered directly to the door",
+        price: "10",
+        type: "private"
+      },
+      {
+        id: "fedex",
+        name: "GrabExpress",
+        desc: "GrabExpress - Package delivered directly to the door",
+        price: "10",
+        type: "private"
+      },
+      {
+        id: "dhl",
+        name: "POS Indonesia",
+        desc: "Pos Indonesia - Package delivered directly to your company",
+        price: "12",
+        type: "company"}],
 
 
     basket: {
