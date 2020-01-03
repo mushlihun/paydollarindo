@@ -108,9 +108,12 @@ nav .brand-logo {
   font-weight: normal;
   text-decoration: line-through;
 }
-
 .info {
   min-height: 155px;
+}
+
+.a .img {
+  width: 10%;
 }
 
 .input-field {
@@ -179,6 +182,9 @@ nav .brand-logo {
 
 .collection .collection-item.avatar {
   min-height: auto;
+}
+.payment .payment-item.avatar {
+  min-height: 30%;
 }
 
 .autocomplete-container {
