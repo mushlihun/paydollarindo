@@ -8,25 +8,46 @@ const store = new Vuex.Store({
     products: [
     {
       id: "727026",
-      name: "Paydollar",
+      name: "Black t-shirt",
       image:
-      "https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg",
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=45&h=45",
       price: 34 },
 
     {
       id: "727027",
-      name: "Peso Pay",
+      name: "Brown pants",
       image:
-      "https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=45&h=45",
       price: 78 },
 
     {
       id: "727028",
-      name: "Siampay",
+      name: "Red Sweatshirt",
       image:
-      "https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg",
+      "https://images.unsplash.com/photo-1482703468513-9c19ac672ed4?auto=format&fit=crop&w=45&h=45",
       price: 109 }],
-
+      
+      payments: [
+        {
+          id: "1",
+          name: "Credit Card",
+          image:
+          "https://image.flaticon.com/icons/svg/196/196578.svg",
+          price: "CC" },
+    
+        {
+          id: "2",
+          name: "BCA",
+          image:
+          "https://www.bca.co.id/assets/images/logobcasvg.svg;bcaebca1422159e98f0",
+          price: "VA" },
+    
+        {
+          id: "3",
+          name: "OVO",
+          image:
+          "https://1.bp.blogspot.com/-zqvCZXYnnfA/XciTU6Ikw_I/AAAAAAAABJc/TrUNMleviBsRtXgnDWzFEhZjxN03ET7_gCLcBGAsYHQ/s1600/Logo%2BOVO.png",
+          price: "OP" }],
 
     shippingMethods: [
       {
@@ -264,6 +285,7 @@ new Vue({
 
   created: function () {
     this.$store.dispatch("initializeBasket", this.products);
+    this.$store.dispatch("initializeBasket", this.payments);
     this.scrollIndicator();
   },
   mounted: function () {
@@ -314,6 +336,9 @@ new Vue({
     },
     products() {
       return this.$store.state.products;
+    },
+    payments() {
+      return this.$store.state.payments;
     },
     shippingMethods() {
       return this.$store.state.shippingMethods;
@@ -414,7 +439,13 @@ new Vue({
       if (this.$v.consent.$invalid) {
         $('html, body').animate({ scrollTop: document.body.scrollHeight }, "slow");
       }
-    } } });
+    },
+    
+    goTopayform() {
+      payform.html
+    }
+  
+  } });
 
 
 

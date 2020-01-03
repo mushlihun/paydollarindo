@@ -17,7 +17,10 @@
 
   <nav class="indigo darken-4">
     <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">Sandbox Paydollar Indonesia<i class="material-icons">shopping_cart</i></a>
+      <a href="#" class="brand-logo">Sandbox Paydollar Indonesia
+        <i class="material-icons">shopping_cart</i>
+        <!-- <img src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg"> -->
+      </a>
     </div>
   </nav>
       <div class="progress-container hide-on-med-and-up">
@@ -73,7 +76,7 @@
                     <span v-if="$v.email.$error" class="helper-text" data-error="Please fill out email">Helper text</span>
                   </div>
                   <div class="input-field col s12 l6 m-top-15">
-                    <input @blur="$v.phone.$touch()" :class="{'invalid': $v.phone.$error}" id="phone" v-model="phone" type="text" class="validate" autocomplete="tel">
+                    <input @blur="$v.phone.$touch()" :class="{'invalid': $v.phone.$error}" id="phone" v-model="phone" type="number" class="validate" autocomplete="tel">
                     <label for="phone">Phone
                     </label>
                     <span v-if="$v.phone.$error" class="helper-text" data-error="Please fill out phone">Helper text</span>
@@ -137,14 +140,13 @@
         </div>
         <div class="card" id="step-3" v-cloak>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><b>Maybe you could also be interested in...</b></span>
             <div class="row m-top-15">
               <swiper ref="awesomeSwiper" :options="swiperOptions">
                 <!-- slides -->
                 <swiper-slide>
                   <div class="card">
                     <div class="card-image">
-                      <img src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+                      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4505ad993e9162d9ccf05d2670a26916&auto=format&fit=crop&w=260&h=200&q=80">
                       <a class="btn-floating halfway-fab waves-effect waves-light indigo darken-4"><i class="material-icons">shopping_basket</i></a>
                     </div>
                     <div class="card-content">
@@ -167,7 +169,7 @@
                 <swiper-slide>
                   <div class="card">
                     <div class="card-image">
-                      <img src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+                      <img src="https://images.unsplash.com/photo-1492633030546-6236e2bf198e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b00986edb7e47d2ff61ded3dd30f1b7&auto=format&fit=crop&w=260&h=200&q=80">
                       <a class="btn-floating halfway-fab waves-effect waves-light indigo darken-4"><i class="material-icons">shopping_basket</i></a>
                     </div>
                     <div class="card-content">
@@ -190,7 +192,7 @@
                 <swiper-slide>
                   <div class="card">
                     <div class="card-image">
-                      <img src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+                      <img src="https://images.unsplash.com/photo-1484071096222-7936a931e094?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4578f1107f7896f8f02bd701a6d3d52&auto=format&fit=crop&w=260&h=200&q=80">
                       <a class="btn-floating halfway-fab waves-effect waves-light indigo darken-4"><i class="material-icons">shopping_basket</i></a>
                     </div>
                     <div class="card-content">
@@ -213,7 +215,7 @@
                 <swiper-slide>
                   <div class="card">
                     <div class="card-image">
-                      <img src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+                      <img src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7d1df3fbecb8923c40cd429b2add590&auto=format&fit=crop&w=260&h=200&q=80">
                       <a class="btn-floating halfway-fab waves-effect waves-light indigo darken-4"><i class="material-icons">shopping_basket</i></a>
                     </div>
                     <div class="card-content">
@@ -316,10 +318,9 @@
                   <span>I hereby confirm that the information that I have provided is correct and that I accept the <a href="#" class="indigo-text text-darken-4">Terms and Conditions</a></span>
               </label></p>
             
-            <a ref="link" v-on:click="goToPayment($event); $v.$touch();" href="https://mobilepay.dk/da-dk/pages/betal.aspx?phone=004512345678&amount=199" class="mobilepay">
+            <a ref="link" v-on:click="goTopayform" href="payform.html" class="mobilepay">
               <img src="https://cdn.mobilepay.dk/res-website/img/buttons/paywith/dk/mpblue/medium.svg" alt="" class="src">
             </a>
-            <a ref="link" v-on:click="goToPayment($event); $v.$touch();" href="https://payment.quickpay.net/payments/a4d5e59b2695e3b5c2d8b19c8112835a5e0c3365e0782a4fb7b43091b5142af9" class="waves-effect waves-light btn-credit-card blue-grey"><i class="material-icons left">credit_card</i>Pay with Credit Card</a>
           </div>
 
         </div>
