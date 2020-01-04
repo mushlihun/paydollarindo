@@ -8,6 +8,14 @@ input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0px 9999px white !important;
 }
 
+.btnpay {
+  max-width: 30%;
+}
+.logofoot {
+  max-width: 10%;
+  right: 10%;
+  position: absolute;
+}
 .header {
   position: fixed;
   top: 0px;
