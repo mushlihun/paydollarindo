@@ -9,12 +9,29 @@ input:-webkit-autofill {
 }
 
 .btnpay {
-  max-width: 30%;
+  max-width: 20%;
 }
 .logofoot {
-  max-width: 10%;
+  max-width: 5%;
+  margin-top: -1.5%;
   right: 10%;
   position: absolute;
+}
+.footer
+{
+  position: absolute;
+  border-bottom: 3px solid orange;
+  width: 90%;
+}
+.textfoot{
+  color: orange;
+}
+.step {
+  background-color: rgb(255, 235, 204);
+  text-align: center;
+}
+.detailpayment {
+  text-align: center;  /* For Edge */
 }
 .header {
   position: fixed;
@@ -193,6 +210,16 @@ nav .brand-logo {
 }
 .payment .payment-item.avatar {
   min-height: 30%;
+}
+.col .s12 .expiry {
+  /* relative position for at de absolut positionerede forslag får korrekt placering.*/
+  position: relative;
+  width: 50%;
+}
+.expiry {
+  /* relative position for at de absolut positionerede forslag får korrekt placering.*/
+  position: relative;
+  width: 50%;
 }
 
 .autocomplete-container {

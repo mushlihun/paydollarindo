@@ -29,53 +29,55 @@
   </div>
   <div class="container wrapper">
     <img style="display: block; margin-left: auto; margin-right: auto; width: 12%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQivhcNx9kMxwt2VwiQ9UDpxzUOfWJSS_c4nwq3rBoEkGyHlgtG">
-    <div class="row">
+  <div class="row">
       <div class="col s12 m6">
         <div class="card" id="step-2" v-cloak>
           <div class="card-content">
-            <img class="btnpay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRkRttSNGQjDK_IWEyYHdP9M3VeeMUo5yqkakRGKbBigIvGiihs" alt="" class="src">
-            <span class="card-title activator grey-text text-darken-4 m-top-15 p-top-10"><b>Form Credit Card and Debit Card</b></span>
-            <br>
-              <div class="row m-top-15">
-                <div class="input-field col s12 autocomplete-container">
-                  <input class="autocomplete" id="phone" class="validate" v-model="phone" type="number" class="validate" autocomplete="shipping street-address">
-                  <label for="phone">Card Number</label>
-                </div>
-              </div>
-              <div class="row m-top-15">
-                <div class="input-field col s12 expiry">
-                  <input class="expiry" id="houseNumber" class="validate" v-model="houseNumber" type="number" class="validate" autocomplete="shipping street-address">
-                  <label for="houseNumber">Expiry Date</label>
-                </div>
-              </div>
+            <div class="step">
+            <span class="card-title activator grey-text text-darken-4 m-top-15 p-top-10"><b>Transaction Result</b></span>
+            </div>
+            <div class="detailpayment"><b>Your Payment transaction is pending</b></div>
+            <div class="detailpayment">
+            <p>Merchant Name:                  Asiapay</p>
+            <p>Transaction Amount:             IDR 20.000</p>
+            <p>Payment Method:                 ALFAGROUP</p>
+            <p>Merchant Reference No.:         325680343487</p>
+            <p>Virtual Account Number:         234464523467</p>
+            <p>Transaction will be expire at:  1 Jan 2020 20:01:19 (GMT+7)</p>
+            <p>Payment Reference No.:          435435438545</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col s12 m6">
         <div class="card" id="step-2" v-cloak>
           <div class="card-content">
-            <img class="btnpay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRkRttSNGQjDK_IWEyYHdP9M3VeeMUo5yqkakRGKbBigIvGiihs" alt="" class="src">
-            <span class="card-title activator grey-text text-darken-4 m-top-15 p-top-10"><b>Form Credit Card and Debit Card</b></span>
-            <br>
-              <div class="row m-top-15">
-                <div class="input-field col s12 autocomplete-container">
-                  <input class="autocomplete" id="phone" class="validate" v-model="phone" type="number" class="validate" autocomplete="shipping street-address">
-                  <label for="phone">Card Number</label>
-                </div>
-              </div>
-              <div class="row m-top-15">
-                <div class="input-field col s12 expiry">
-                  <input class="expiry" id="houseNumber" class="validate" v-model="houseNumber" type="number" class="validate" autocomplete="shipping street-address">
-                  <label for="houseNumber">Expiry Date</label>
-                </div>
-              </div>
+            <span class="card-title activator grey-text text-darken-4 m-top-15 p-top-10"><b>Step Payment</b></span>
+            <label class="d-block m-top-15">
+              <input type="checkbox" v-model="showAlternative" class="filled-in" />
+              <span>Choose Step Payment via ATM</span>
+            </label>
+
+            <div v-if="showAlternative" class="m-top-15">
+              <div class="row m-top-15" v-if="showAlternative">
+                <p>1. Masukkan KARTU ATM BCA & PIN</p>
+                <p>2. Pilih TRANSAKSI LAINNYA</p>
+                <p>3. Pilih TRANSFER</p>
+                <p>4. Pilih ke BCA VIRTUAL ACCOUNT</p>
+                <p>5. Masukkan NOMOR BCA VIRTUAL ACCOUNT</p>
+                <p>6. Masukkan JUMLAH yang ingin dibayarkan lalu tekan BENAR</p>
+                <p>7. Validasi pembayaran anda, tekan YA untuk melanjutkan pembayaran</p>
+                <p>8. Pembayaran SELESAI</p>
           </div>
         </div>
       </div>
     </div>
+    
+      </div>
+  </div>
     <div class="footer">
       <p class="textfoot"><b>Paydollar Payment Service</b></p><img class="logofoot" src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
-    </div> 
+    </div>
   </div>
 </div>
 <!-- partial -->

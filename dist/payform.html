@@ -42,7 +42,7 @@
 
       </div>
     </div>
-    <img style="width: 10%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQivhcNx9kMxwt2VwiQ9UDpxzUOfWJSS_c4nwq3rBoEkGyHlgtG">
+    <img style="display: block; margin-left: auto; margin-right: auto; width: 12%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQivhcNx9kMxwt2VwiQ9UDpxzUOfWJSS_c4nwq3rBoEkGyHlgtG">
     <div class="row">            
       <div class="col s12 m6">
         <div class="card" id="step-4" v-cloak>
@@ -51,19 +51,19 @@
             <div class="row info">
               <div class="col s12 m6">
                 <p><b>Billing address:</b></p>
-                <p>{{ name }}</p>
-                <p>{{ company }}</p>
-                <p>{{ addressComputed }}</p>
-                <p>{{ cityComputed }}</p>
-                <p>{{ email }}</p>
-                <p>{{ phone }}</p>
+                <p>User</p>
+                <p>Asiapay</p>
+                <p>Jl. DR. Ide Anak Agung Gde Agung, RT.5/RW.2, Kuningan, Kuningan Tim., Kecamatan Setiabudi</p>
+                <p>Jakarta</p>
+                <p>user@asiapay.com</p>
+                <p>081234567890</p>
               </div>
               <div class="col s12 m6" v-if="showAlternative">
                 <p><b>Delivery address:</b></p>
-                <p>{{ delName }}</p>
-                <p>{{ delCompany }}</p>
-                <p>{{ delAddressComputed }}</p>
-                <p>{{ delCityComputed }}</p>
+                <p>Asiapay Indonesia</p>
+                <p>Asiapay</p>
+                <p>Jl. DR. Ide Anak Agung Gde Agung, RT.5/RW.2, Kuningan, Kuningan Tim., Kecamatan Setiabudi</p>
+                <p>Jakarta</p>
               </div>
             </div>
             <span class="card-title activator grey-text text-darken-4 m-top-15"><b>Your order</b></span>
@@ -74,7 +74,7 @@
                 <div class="row">
                   <div class="col s12 l4">
                     <span class="title">{{ product.name }}</span>
-                    <p>${{ product.price }}</p>
+                    <p>Rp{{ product.price }}</p>
                   </div>
                   <div class="input-field col s6 l2">
                     <select>
@@ -96,13 +96,13 @@
               </li>
               <li v-if="taxTotal">
                 <span><b>TAX</b></span>
-                <span class="right">${{taxTotal}}</span>
+                <span class="right">Rp 100000</span>
               </li>
             </ul>
           </div>
           <div class="card-action" v-if="basketTotal">
             <span><b>Total</b></span>
-            <span class="right"><b>${{basketTotal}}</b></span>
+            <span class="right"><b>Rp 100000</b></span>
           </div>
           
 
@@ -111,12 +111,17 @@
       <div class="col s12 m6">
         <div class="card" id="step-2" v-cloak>
           <div class="card-content">
+            <p>Pay By Credit and Debit Card</p>
             <a ref="link" href="paycomp.html">
               <img class="btnpay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRkRttSNGQjDK_IWEyYHdP9M3VeeMUo5yqkakRGKbBigIvGiihs" alt="" class="src">
             </a>
-            <a ref="link" href="paycomp.html">
+            <br>
+            <p>Pay by Bank Transfer (Virtual Account)</p>
+            <a ref="link" href="payva.html">
               <img class="btnpay" src="https://www.bca.co.id/assets/images/logobcasvg.svg;bcaebca1422159e98f0" alt="" class="src">
             </a>
+            <br>
+            <p>Pay By Digital Wallet</p>
             <a ref="link" href="paycomp.html">
               <img class="btnpay" src="https://1.bp.blogspot.com/-zqvCZXYnnfA/XciTU6Ikw_I/AAAAAAAABJc/TrUNMleviBsRtXgnDWzFEhZjxN03ET7_gCLcBGAsYHQ/s1600/Logo%2BOVO.png" alt="" class="src">
             </a>
@@ -133,7 +138,7 @@
             <span class="card-title activator grey-text text-darken-4 m-top-15 p-top-10"><b>Voucher</b></span>
             <label class="d-block m-top-15">
               <input type="checkbox" v-model="showAlternative" class="filled-in" />
-              <span>Choose alternative delivery</span>
+              <span>Choose alternative voucher</span>
             </label>
 
             <div v-if="showAlternative" class="m-top-15">
@@ -158,7 +163,9 @@
         </div>
       </div>
     </div>
-        <img class="logofoot" src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+    <div class="footer">
+      <p class="textfoot"><b>Paydollar Payment Service</b></p><img class="logofoot" src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+    </div>
   </div>
 </div>
 <!-- partial -->

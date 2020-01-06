@@ -11,21 +11,21 @@ const store = new Vuex.Store({
       name: "Black t-shirt",
       image:
       "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=45&h=45",
-      price: 34 },
+      price: 30000 },
 
     {
       id: "727027",
       name: "Brown pants",
       image:
       "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=45&h=45",
-      price: 78 },
+      price: 30000 },
 
     {
       id: "727028",
       name: "Red Sweatshirt",
       image:
       "https://images.unsplash.com/photo-1482703468513-9c19ac672ed4?auto=format&fit=crop&w=45&h=45",
-      price: 109 }],
+      price: 40000 }],
       
       payments: [
         {
