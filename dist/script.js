@@ -25,7 +25,7 @@ const store = new Vuex.Store({
       name: "Red Sweatshirt",
       image:
       "https://images.unsplash.com/photo-1482703468513-9c19ac672ed4?auto=format&fit=crop&w=45&h=45",
-      price: 40000 }],
+      price: 30000 }],
       
       payments: [
         {
@@ -54,21 +54,21 @@ const store = new Vuex.Store({
         id: "gls",
         name: "Gosend",
         desc: "Gosend - Package delivered directly to the door",
-        price: "10",
+        price: "10000",
         type: "private"
       },
       {
         id: "fedex",
         name: "GrabExpress",
         desc: "GrabExpress - Package delivered directly to the door",
-        price: "10",
+        price: "10000",
         type: "private"
       },
       {
         id: "dhl",
         name: "POS Indonesia",
         desc: "Pos Indonesia - Package delivered directly to your company",
-        price: "12",
+        price: "12000",
         type: "company"}],
 
 

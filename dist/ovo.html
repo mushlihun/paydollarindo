@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://www.ovo.id/points/check -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript" src="./Check OVO Points _ OVO_files/52ff254ad2"></script><script src="./Check OVO Points _ OVO_files/nr-1158.min.js.download"></script><script type="text/javascript" async="" src="./Check OVO Points _ OVO_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Check OVO Points _ OVO_files/recaptcha__en.js.download"></script><script async="" src="./Check OVO Points _ OVO_files/gtm.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"52ff254ad2",applicationID:"93249129"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <title>Check OVO Points | OVO</title>
+
+        <meta name="description" content="Jadikan transaksi lebih simpel, instan, aman dan dapatkan berbagai keuntungan lainnya!">
+    
+        <meta name="keywords" content="ovo, payment, point, deal, loyalty, bill payment, promo, diskon, cashback, bayar listrik, pulsa, sky parking, maxx coffee, matahari department store, hypermart">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="https://www.ovo.id/apple-touch-icon.png">
+    <link rel="icon" href="https://www.ovo.id/ovo_front_res/favicon.png" type="image/png" sizes="32x32">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="./Check OVO Points _ OVO_files/ovo.css">
+    <link rel="stylesheet" href="./Check OVO Points _ OVO_files/animate.min.css">
+        <link rel="stylesheet" href="./Check OVO Points _ OVO_files/parsley.css">
+    
+    <!-- monitoring -->
+    <script src="./Check OVO Points _ OVO_files/datadog-rum-us.js.download" type="text/javascript">
+    </script>
+    <script>
+        window.DD_RUM && window.DD_RUM.init({
+            clientToken: 'pub393adc80b222aa57208776c6c2736ccf',
+            applicationId: 'def51c1e-7df8-41f0-8a5a-98836348a555',
+        });
+    </script>
+
+    <script src="./Check OVO Points _ OVO_files/modernizr-2.8.3.min.js.download"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+    {'gtm.start': new Date().getTime(),event:'gtm.js'}
+    );var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KDGTQW3');</script>
+    <!-- End Google Tag Manager -->
+    
+<style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+	font-weight: bold;
+	padding: 8px 15px 8px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	white-space: nowrap;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+	color: #B94A48;
+	background-color: #F2DEDE;
+	border-color: #EED3D7;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+	color: #468847;
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+	color: #3A87AD;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+	color: #C09853;
+	background-color: #FCF8E3;
+	border-color: #FBEED5;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style><style type="text/css" id="core-notify">.notifyjs-corner {
+	position: fixed;
+	margin: 5px;
+	z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+	position: relative;
+	display: block;
+	height: inherit;
+	width: inherit;
+	margin: 3px;
+}
+
+.notifyjs-wrapper {
+	z-index: 1;
+	position: absolute;
+	display: inline-block;
+	height: 0;
+	width: 0;
+}
+
+.notifyjs-container {
+	display: none;
+	z-index: 1;
+	position: absolute;
+}
+
+.notifyjs-hidable {
+	cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+	position: relative;
+}
+
+.notifyjs-arrow {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+}</style></head>
+
+<body data-spy="scroll" data-target="#fixedSpyscroll" data-offset="200">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDGTQW3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <header>
+        <div class="pull-left">
+            <div class="menu-icon js-toggle-menu pointer toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="https://www.ovo.id/" class="logo inline">
+                <svg width="77" height="24" viewBox="0 0 77 24" xmlns="http://www.w3.org/2000/svg" class="ovo-main-logo">
+                    <g fill="#06B3BA" fill-rule="evenodd">
+                        <path d="M21.186 20.244c-2.321 2.234-5.435 3.445-8.798 3.445-3.408 0-6.522-1.211-8.844-3.445A11.613 11.613 0 0 1 0 11.856c0-3.2 1.28-6.212 3.556-8.39C5.876 1.234 8.99.023 12.399.023c3.363 0 6.477 1.211 8.799 3.445 2.276 2.177 3.555 5.189 3.555 8.389 0 3.2-1.29 6.2-3.567 8.388M12.4 3.856c-4.45 0-7.802 3.444-7.802 8 0 4.555 3.363 8 7.802 8 4.394 0 7.757-3.445 7.757-8 0-4.556-3.363-8-7.757-8M50.424 2.789l-9.535 21.178-.543-.1c-2.718-.49-3.261-1.167-4.541-3.923l-7.122-15.5H26.01V.667h10.123v3.777H33.71l5.73 12.845 5.548-12.845h-2.966V.667h8.402v2.122zM73.444 20.244c-2.32 2.234-5.435 3.445-8.798 3.445-3.408 0-6.522-1.211-8.844-3.445-2.276-2.177-3.555-5.188-3.555-8.388s1.28-6.212 3.555-8.39C58.124 1.234 61.238.023 64.646.023c3.363 0 6.477 1.211 8.798 3.445C75.72 5.644 77 8.656 77 11.856c0 3.2-1.28 6.2-3.556 8.388M64.646 3.856c-4.45 0-7.802 3.444-7.802 8 0 4.555 3.363 8 7.802 8 4.394 0 7.757-3.445 7.757-8 0-4.556-3.352-8-7.757-8"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+            </header>
+        <nav class="sidebar">
+        <div class="overlay js-toggle-menu"></div>
+        <div class="menu">
+            <div class="btn-close pointer js-toggle-menu"><img src="./Check OVO Points _ OVO_files/ic-close.svg"></div>
+            <ul class="unstyled">
+                <li><a href="https://www.ovo.id/">Home</a></li>
+                <li><a href="https://www.ovo.id/features">Features</a></li>
+                <li><a href="https://www.ovo.id/about">About Us</a></li>
+                <li><a href="https://www.ovo.id/deals">Deals</a></li>
+                <li><a href="https://www.ovo.id/merchants">Merchants</a></li>
+            </ul>
+            <a href="https://www.ovo.id/points/check" class="btn button-on-menu">Check OVO Points</a>
+            <div class="separator mv32"></div>
+            <ul class="unstyled">
+                <li><a href="https://www.ovo.id/contact">Contact Us</a></li>
+                <li><a href="https://www.ovo.id/howtotopup">How To Top Up</a></li>
+                <li><a href="https://www.ovo.id/faq">FAQ</a></li>
+                <li><a href="https://www.ovo.id/tnc">Terms &amp; Conditions</a></li>
+                <li><a href="https://www.ovo.id/information">Information</a></li>
+                <li><a href="https://www.ovo.id/career">Career</a></li>
+                <li><a href="https://www.ovo.id/helpcenter">Help Center</a></li>
+            </ul>
+            <div class="separator mv32"></div>
+            <ul class="unstyled">
+                <li><a href="https://www.ovo.id/partnership">Join As Merchant</a></li>
+            </ul>
+            <div class="ovo-menu-social">
+                <a target="_blank" href="https://www.facebook.com/ovoidn"><i class="fi-social-facebook"></i></a>
+                <a target="_blank" href="https://instagram.com/ovo_id"><i class="fi-social-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/ovo_id"><i class="fi-social-twitter"></i></a>
+                <a target="_blank" href="mailto:cs@ovo.id" class="last"><i class="fi-mail"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of sidebar -->
+    
+    <div class="outer main-content">
+    <div class="middle">
+
+        <div class="inner check-point-loading check-point-form-component" style="display: none;">
+            <div class="text-center">
+                <div class="check-process">
+                    <svg width="211" height="179" viewBox="0 0 211 179" xmlns="http://www.w3.org/2000/svg">
+                        <title>6F6F7D4F-C20D-42F2-8095-29973207DEC2</title>
+                        <g transform="translate(-5)" fill="none" fill-rule="evenodd">
+                            <ellipse stroke="#00BCD6" stroke-width="2" opacity=".5" cx="25.683" cy="5.714" rx="4.683" ry="4.679"></ellipse>
+                            <ellipse stroke="#00BCD6" stroke-width="2" opacity=".5" cx="69.733" cy="21.679" rx="4.683" ry="4.679"></ellipse>
+                            <ellipse stroke="#06B3BA" stroke-width="2" opacity=".5" cx="202.13" cy="154.607" rx="4.683" ry="4.679"></ellipse>
+                            <ellipse stroke="#06B3BA" stroke-width="2" opacity=".5" cx="178.081" cy="172.643" rx="4.683" ry="4.679"></ellipse>
+                            <g opacity=".5" stroke="#6B767E" stroke-width="3" stroke-linecap="round">
+                                <path d="M54 157.5h120M34 141.5h160M13.938 125h200"></path>
+                            </g>
+                            <path id="leftGear" d="M74 63.523c0-.555-.43-1.133-.961-1.29L66.41 60.26c-.5-1.637-1.088-3.208-1.878-4.696l3.417-6.183c.269-.486.17-1.198-.222-1.591l-6.417-6.431c-.391-.393-1.108-.492-1.588-.229l-6.175 3.388c-1.486-.791-3.054-1.367-4.69-1.868l-1.97-6.681c-.157-.535-.734-.969-1.29-.969h-9.095c-.555 0-1.133.433-1.29.969l-1.972 6.68c-1.638.502-3.209 1.116-4.696 1.908l-6.184-3.405c-.486-.267-1.198-.167-1.591.226L14.337 47.8c-.392.392-.491 1.11-.228 1.59l3.388 6.178c-.791 1.487-1.857 3.055-2.358 4.693l-7.173 1.989c-.534.147-.966.716-.966 1.272v9.095c0 .555.438 1.127.966 1.273l7.173 1.99c.5 1.638 1.361 3.208 2.153 4.696l-3.298 6.184c-.26.486-.15 1.198.245 1.59l6.474 6.431c.395.392 1.117.492 1.584.236l6.22-3.395c1.488.79 3.071 1.797 4.71 2.296l2 7.122c.15.53.72.959 1.275.959h9.095c.555 0 1.127-.434 1.273-.959l1.99-7.12c1.639-.5 3.208-1.33 4.697-2.122l6.184 3.31c.486.26 1.197.151 1.59-.244l6.43-6.466c.392-.395.491-1.116.236-1.584l-3.395-6.217c.792-1.487 1.308-3.069 1.808-4.707l6.629-1.98c.53-.159.961-.737.961-1.293v-9.095zM41.05 79.885c-6.526 0-11.816-5.29-11.816-11.814 0-6.525 5.29-11.816 11.816-11.816 6.526 0 11.815 5.29 11.815 11.816 0 6.524-5.29 11.814-11.815 11.814zM192.326 61.73c.17-.526-.051-1.201-.507-1.515l-3.417-2.355c.02-1.111-.028-2.198-.217-3.276l3.098-2.897c.403-.376.525-1.083.276-1.574l-2.355-4.635c-.251-.493-.892-.81-1.444-.705l-4.142.786c-.76-.786-1.611-1.456-2.522-2.095l.116-4.177c.015-.551-.402-1.138-.926-1.308l-4.95-1.608c-.527-.172-1.204.054-1.519.513l-2.363 3.447a17.18 17.18 0 0 0-3.283.236l-2.891-3.083c-.382-.406-1.093-.531-1.584-.282l-4.636 2.36c-.493.25-.81.891-.705 1.444l.786 4.144c-.787.76-1.76 1.514-2.398 2.425l-4.473-.196c-.555-.024-1.145.385-1.315.91l-1.609 4.95c-.17.527.065 1.201.53 1.509l3.734 2.471c-.02 1.112.196 2.254.387 3.332l-3.022 2.91c-.4.385-.516 1.098-.263 1.59l2.386 4.645c.254.494.9.812 1.441.71l4.173-.782c.76.787 1.535 1.725 2.447 2.362l-.18 4.447c-.021.552.39 1.138.914 1.309l4.95 1.608c.527.171 1.2-.061 1.507-.522l2.462-3.704c1.112.02 2.248-.178 3.326-.368l2.908 3.029c.384.399 1.098.516 1.59.264l4.643-2.383c.493-.253.811-.898.71-1.44l-.784-4.17c.787-.76 1.423-1.633 2.061-2.544l4.15.1c.548.012 1.13-.406 1.301-.93l1.609-4.951zm-28.446-6.505a7.672 7.672 0 1 1 14.592 4.741 7.672 7.672 0 0 1-14.592-4.741z" stroke="#06B3BA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".9"></path>
+                            <g id="middleGear">
+                            <path d="M155.154 143.643l.726-.73c.389-.39.487-1.104.221-1.59l-1.396-2.559-4.012-7.347c1.205-2.263 1.99-4.67 2.752-7.165l10.59-3.164c.533-.16.965-.74.965-1.295V104.9c0-.556-.425-1.133-.965-1.294l-3.698-1.1-6.892-2.05c-.761-2.493-1.656-4.884-2.859-7.15l5.457-9.873c.268-.486.167-1.2-.224-1.592l-10.507-10.53c-.392-.394-1.105-.496-1.59-.23l-9.86 5.41c-2.262-1.205-4.648-2.082-7.14-2.845l-3.151-10.693c-.155-.526-.733-.953-1.288-.953H107.39c-.556 0-1.133.428-1.288.953l-3.155 10.69c-2.494.766-4.884 1.701-7.15 2.906l-9.874-5.436c-.486-.268-1.2-.165-1.592.227l-10.53 10.518c-.394.393-.496 1.106-.23 1.59l5.41 9.866c-1.205 2.263-2.828 4.65-3.59 7.145l-11.419 3.165c-.537.149-.972.722-.972 1.276v14.893c0 .556.441 1.13.972 1.276l11.42 3.167c.761 2.494 2.071 4.885 3.276 7.15l-5.266 9.874c-.26.486-.148 1.2.238 1.583l10.617 10.547c.391.388 1.105.487 1.591.221l9.91-5.408c2.265 1.203 4.674 2.735 7.169 3.495l3.185 11.337c.15.533.724.965 1.278.965h14.893c.556 0 1.13-.438 1.277-.965l3.168-11.336c2.494-.76 4.883-2.024 7.15-3.228l9.874 5.284c.486.26 1.19.16 1.59-.243l1.084-1.09" stroke="#00AAB3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#9BDAD9"></path>
+                            <path d="M150.5 150a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="#00AAB3"></path>
+                            <path d="M114 135c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20z" stroke="#00AAB3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#F8F8F8"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <br>
+                    <br>
+                    <label for="" class="block form__input--label pb8">Memproses..
+                        <br>Pastikan koneksi internet Anda stabil</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner form-phone-container  check-point-form-component">
+            <h2>Check OVO Points</h2>
+            <form id="checkform" action="https://www.ovo.id/points/sendOtp" class="form-check-points" novalidate="">
+                <input type="hidden" name="bPT6t2v4iDKPVb9" value="IwqvNZQuYetWfGvu">
+                <div class="form-wrap">
+                    <label for="" class="block form__input--label pb8">No Telepon</label>
+                    <input type="text" class="text-center form__input" placeholder="08xxxxxxxxxxxx" required="" data-parsley-type="number" data-parsley-required-message="Kolom tidak boleh kosong" data-parsley-type-message="Nomor yang anda masukkan salah, mohon periksa kembali" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-minlength="10" data-parsley-minlength-message="Karakter kurang dari 10 digit" data-parsley-maxlength="14" data-parsley-maxlength-message="Karakter lebih dari 14 digit" name="phone" data-parsley-trigger="keyup" data-parsley-validation-threshold="0"><div class="thick"></div>
+                    <label class="text-danger"></label>
+                </div>
+                <div class="g-captcha-box mt16">
+                    <div class="g-recaptcha" data-sitekey="6LdvDpkUAAAAAEdoB6mxFulV9DDjFCNI62sWC1Qo" data-callback="recaptchaCallback"><div style="width: 304px; height: 78px;"><div><iframe src="./Check OVO Points _ OVO_files/anchor.html" width="304" height="78" role="presentation" name="a-jy053xuwm8ci" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                    <label class="text-danger"></label>
+                    <input id="g-recaptcha-input" data-parsley-required="true" data-parsley-required-message="Silahkan centang recaptcha di atas." value="" type="text" style="display:none;">
+                </div>
+                <button class="btn-send" type="submit" id="send-otp">Cek Aja</button>
+            </form>
+        </div>
+
+        <div class="inner form-otp-container check-point-form-component" style="display: none;">
+            <h2>Check OVO Points</h2>
+            <form id="authform" action="https://www.ovo.id/points/validateOtp" class="form-check-points">
+                <input type="hidden" name="bPT6t2v4iDKPVb9" value="IwqvNZQuYetWfGvu">
+                <div class="form-wrap has-info">
+                    <label for="" class="block form__input--label pb8 ovo-code">Kode Otentikasi &nbsp;
+                        <div class="tooltip"><img src="./Check OVO Points _ OVO_files/ic-question-mark.svg" class="ic-question-mark">
+                            <div class="tooltiptext">Kode Otentikasi adalah kode yang dikirimkan melalui SMS dan wajib diinput di kolom ini demi keamanan akun Anda.</div>
+                        </div>
+                    </label>
+                    <input type="text" class="block form__input text-center" required="" data-parsley-type="number" data-parsley-required-message="Kolom tidak boleh kosong" data-parsley-type-message="Nomor yang anda masukkan salah, mohon periksa kembali" name="code" data-parsley-trigger="keyup" data-parsley-validation-threshold="0">
+                    <label class="text-danger text-danger-point"></label>
+                    <a class="tdn disabled pointer-normal" href="javascript:void(0);">
+                        <label for="" class="text-info block form__input--label pb8">
+                            Kirim ulang kode otentifikasi <span class="counter-wrapper">(<span class="otp-counter-text" data-start="30">30</span> detik)</span>
+                        </label>
+                    </a>
+                    <a href="javascript:void(0);" class="tdn authLink resend-otp" style="display:none">
+                        <label for="" class="text-info block form__input--label pb8">Kirim ulang kode otentikasi </label>
+                    </a>
+                </div>
+                <button type="submit" class="btn-send">Selanjutnya</button>
+            </form>
+        </div>
+        <div class="inner inner-result result-box  check-point-form-component" style="display:none">
+            <div class="text-center">
+                <div class="star2 absolute"><img src="./Check OVO Points _ OVO_files/ic-blink-copy.svg" class="ic-blink-copy"></div>
+                <div class="star1 absolute"><img src="./Check OVO Points _ OVO_files/ic-blink-copy-2.svg" class="ic-blink-copy-2"></div>
+                <div class="relative z5 text-center">
+                    <h2>OVO Points Anda</h2>
+                    <h5>Hai, <span id="fullname" style="text-transform:capitalize;"></span>!</h5>
+                    <div class="">
+                        <img src="./Check OVO Points _ OVO_files/ic-ovo-club-copy.svg" class="ic-ovo-club-copy">
+                        <div class="inline">
+                            <h5> <span id="level" style="text-transform:capitalize;"></span> Level</h5><h5>
+                        </h5></div>
+                    </div>
+                    <br>
+                    <label for="" class="block form__input--label pb8">OVO Points Anda saat ini adalah</label>
+                    <div class="point-box inline">
+                        <h1><span id="point"></span></h1>
+                        <h5>OVO POINTS</h5>
+                    </div>
+                    <div class="">
+                        <a href="https://www.ovo.id/" class="btn btn-primary js-close-checkpoint">KELUAR &amp; TUTUP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ovo-footer-poin">
+                Copyright © 2017 PT. Visionet Internasional. All rights reserved.
+        </div>
+    </div>
+</div>
+
+<script src="./Check OVO Points _ OVO_files/api.js.download"></script>
+<script src="./Check OVO Points _ OVO_files/js.cookie.min.js.download"></script>
+<script>
+
+function recaptchaCallback() {
+    document.getElementById('g-recaptcha-input').value = 'correct';
+}
+</script>
+    
+<script src="./Check OVO Points _ OVO_files/jquery.min.js.download"></script>
+<script src="./Check OVO Points _ OVO_files/bootstrap.min.js.download"></script>
+<script src="./Check OVO Points _ OVO_files/plugins.min.js.download"></script>
+<script src="./Check OVO Points _ OVO_files/ovo.min.js.download"></script>
+<script src="./Check OVO Points _ OVO_files/validator.min.js.download"></script>
+<script src="./Check OVO Points _ OVO_files/deals.js.download"></script>
+<script type="text/javascript" src="./Check OVO Points _ OVO_files/parsley.min.js.download"></script>
+<script type="text/javascript" src="./Check OVO Points _ OVO_files/check-point.js.download"></script>
+<script type="text/javascript" src="./Check OVO Points _ OVO_files/notify.min.js.download"></script>
+<script type="text/javascript">
+var subscribe = $('#ovo-embedded-subscribe-form-footer').parsley({
+    errorsContainer: function errorsContainer(Field) {
+        return Field.$element.parent().find('.text-danger');
+    },
+    'errorTemplate':'<span></span>'
+});
+
+window.Parsley.on('field:error', function() {
+    this.$element.parent('.input-group').removeClass('has-success');
+    this.$element.parent('.input-group').addClass('has-danger');
+});
+window.Parsley.on('field:success', function() {
+    this.$element.parent('.input-group').addClass('has-success');
+    this.$element.parent('.input-group').removeClass('has-danger');
+});
+
+$form=$('#ovo-embedded-subscribe-form-footer');
+
+$form.submit(function(e){
+    e.preventDefault();
+
+    var type = $form.attr('method');
+    var action = $form.attr('action').replace('/post', '/post-json?').concat('&c=?');
+    var data = $form.serialize();
+
+    $form.find('.response-label').removeClass('text-danger');
+    $form.find('.response-label').removeClass('text-success');
+
+    $form.find('.submit').val('Loading...');
+    $form.find('.submit').attr('disabled',true);
+    $.ajax({
+        type: type,
+        url: action,
+        data: data,
+        timeout: 5000, // Set timeout value, 5 seconds
+        cache       : false,
+        dataType    : 'jsonp',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) {
+            console.log(err);
+            $form.find('.submit').attr('disabled',false);
+            $form.find('.submit').val('KIRIM');
+
+            var notify = '<ul class="parsley-errors-list filled" id="parsley-id-5"><span class="parsley-type">Pendaftaran newsletter gagal.</span></ul>';
+            $form.find('.input-group').addClass('has-danger');
+            $form.find('.response-label').addClass('text-danger').html(notify);
+        },
+        success     : function(data) {
+            $form.find('.submit').attr('disabled',false);
+            $form.find('.submit').val('KIRIM');
+
+            console.log(data);
+            if (data.result != "success") {
+                var notify = '<ul class="parsley-errors-list filled" id="parsley-id-5"><span class="parsley-type">Pendaftaran newsletter gagal.</span></ul>';
+                $form.find('.input-group').addClass('has-danger');
+                $form.find('.response-label').addClass('text-danger').html(notify);
+            } else {
+                var notify = '<ul class="parsley-errors-list filled" id="parsley-id-5"><span class="parsley-type">Pendaftaran newsletter berhasil. Silakan cek email dan lakukan konfirmasi.</span></ul>';
+                $form.find('.input-group').addClass('has-success');
+                $form.find('.response-label').addClass('text-success').html(notify);
+            }
+        }
+    });
+})
+</script>
+
+<!-- SHOW "BACK TO TOP" LINK -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.show-more').bind('click', function(e){
+        e.preventDefault();
+        var that = this;
+
+        $(that).text('LOADING...').addClass('btn-disabled');
+        $.getJSON($(this).attr('href'), function(response){
+            if (response['data'].length ==0) {
+                $(that).hide();
+            }
+            var html = '';
+            $.each(response['data'], function(i) {
+                html += '<article class="merchantw pull-left animated zoomIn"><div class="merchant"><img src="'+ response['data'][i].image +'" srcset="'+ response['data'][i].image +' 2x, '+ response['data'][i].image +' 3x" onerror="$(this).hide();$(this).parents(\'article.merchantw\').hide();" class="merchant__img absolute"></div></article>'
+            });
+            $('.js-deal:visible').append(html);
+            var a = parseInt($(that).attr('data-next-page'),10);
+
+            $(that).attr('href', '/merchants?page='+ (a+1) +'&limit=12');
+            $(that).attr('data-next-page', (a+1) );
+
+            $(that).text('LEBIH BANYAK').removeClass('btn-disabled');
+        });
+    });
+
+    var subscribe = $('#ovo-embedded-subscribe-form-footer').parsley({
+        errorsContainer: function errorsContainer(Field) {
+            return Field.$element.parent().find('.text-danger');
+        },
+        'errorTemplate':'<span></span>'
+    });
+
+    window.Parsley.on('field:error', function() {
+        this.$element.parent('.input-group').removeClass('has-success');
+        this.$element.parent('.input-group').addClass('has-danger');
+    });
+    window.Parsley.on('field:success', function() {
+        this.$element.parent('.input-group').addClass('has-success');
+        this.$element.parent('.input-group').removeClass('has-danger');
+    });
+
+    // assign class when url has anchor link
+    var siteHref = window.location.href;
+    var hash = siteHref.split("#");
+    if(hash[1] != null) {
+       $("#" + hash[1]).addClass('paddingTop'); // set current link as active
+       console.log(hash[1])
+    }
+
+    // anchor link animate scrolling
+    $( "a.ovo-topup-list-link" ).click(function( event ) {
+        //event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+
+});
+
+$("a.ovo-topup-list-link").on("click", function() {
+   var id = $(this).attr('href');
+   $('.paddingTop').removeClass('paddingTop'); // remove existing active
+   $(id).addClass('paddingTop'); // set current link as active
+});
+
+// pas loading, page scroll, than it removed the class
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+        $('.goToTop').show();
+    } else {
+        $('.goToTop').hide();
+    }
+});
+
+// back to top link
+$(".goToTop").click(function(e){
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: "0px" });
+    $('.paddingTop').removeClass('paddingTop'); // remove existing active
+});
+
+</script>
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"52ff254ad2","applicationID":"93249129","transactionName":"YVdSZBAHDRUEBRVbVlgdc0UREgwLShYOW1dCQR9TCgMADUVOJndtHw==","queueTime":0,"applicationTime":3,"atts":"TRBRElgdHhs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./Check OVO Points _ OVO_files/bframe.html" name="c-jy053xuwm8ci" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

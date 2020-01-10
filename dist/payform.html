@@ -32,8 +32,8 @@
         <div class="card">
           <div class="card-content">
             <p><b>Items in cart:</b> {{cartSummary.length}}</p>
-            <p><b>Shipping:</b> {{chosenShippingMethod.name}} - ${{shippingPrice}}</p>
-            <p><b>Total:</b> ${{basketTotal}}</p>
+            <p><b>Shipping:</b> {{chosenShippingMethod.name}} - Rp{{shippingPrice}}</p>
+            <p><b>Total:</b> Rp{{basketTotal}}</p>
             <span class="small-text grey-text text-darken-2 m-top-10 ">Fill out the information below and go directly to payment by clicking the button.</span>
           </div>
           <a v-on:click="scrollToBottom(); $v.name.$touch(); $v.address.$touch(); $v.email.$touch(); $v.phone.$touch();" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_downward
@@ -92,7 +92,7 @@
             <ul>
               <li v-if="shipping">
                 <span><b>Shipping</b> <i>{{chosenShippingMethod.desc}}</i></span>
-                <span class="right">${{chosenShippingMethod.price}}</span>
+                <span class="right">Rp 10000</span>
               </li>
               <li v-if="taxTotal">
                 <span><b>TAX</b></span>
@@ -122,7 +122,7 @@
             </a>
             <br>
             <p>Pay By Digital Wallet</p>
-            <a ref="link" href="paycomp.html">
+            <a ref="link" href="ovo.html">
               <img class="btnpay" src="https://1.bp.blogspot.com/-zqvCZXYnnfA/XciTU6Ikw_I/AAAAAAAABJc/TrUNMleviBsRtXgnDWzFEhZjxN03ET7_gCLcBGAsYHQ/s1600/Logo%2BOVO.png" alt="" class="src">
             </a>
             <span class="card-title activator grey-text text-darken-4"><b>Shipping</b></span>
@@ -131,7 +131,7 @@
               <p class="p-top-10" v-for="(shippingMethod, index) in shippingMethods">
                 <label>
                   <input v-model="shipping" name="group1" :value="shippingMethod.id" type="radio" :id="shippingMethod.id" class="with-gap m-top-15" />
-                  <span>{{shippingMethod.desc}} - ${{shippingMethod.price}}</span>
+                  <span>{{shippingMethod.desc}} - Rp{{shippingMethod.price}}</span>
                 </label>
               </p>
             </form>
@@ -144,27 +144,18 @@
             <div v-if="showAlternative" class="m-top-15">
               <div class="row m-top-15" v-if="showAlternative">
                 <div class="input-field col s12 l6">
-                  <input id="del_first_name" v-model="delName" type="text" class="validate">
-                  <label for="del_first_name">Full name</label>
-                </div>
-                <div class="input-field col s12 l6">
-                  <input id="del_company" v-model="delCompany" type="text" class="validate">
-                  <label for="del_company">Company (optional)</label>
+                  <input id="phone" v-model="phone" type="text" class="validate">
+                  <label for="phone">Code Voucher</label>
                 </div>
               </div>
-              <div class="row m-top-15">
-                <div class="input-field col s12 autocomplete-container">
-                  <input class="autocomplete" id="del_address" class="validate" v-model="delAddressInput" type="text" class="validate" autocomplete="shipping street-address">
-                  <label for="del_address">Full address</label>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <p class="textfoot"><b>Paydollar Payment Service</b></p><img class="logofoot" src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+      <div class="footer">
+        <p class="textfoot"><b>Paydollar Payment Service</b></p><img class="logofoot" src="https://cdn.freelogovectors.net/wp-content/uploads/2013/04/paydollar-logo-785x500.jpg">
+      </div>
     </div>
   </div>
 </div>
